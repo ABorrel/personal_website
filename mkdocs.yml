@@ -1,0 +1,90 @@
+site_name: Dr. Alexandre Borrel
+site_description: Cheminformatician applying AI, QSAR, and scientific software to toxicology and drug discovery.
+site_author: Alexandre Borrel
+site_url: https://www.alexborrel.com/
+copyright: Copyright &copy; 2026 Alexandre Borrel
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - content.tooltips
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    logo: fontawesome/solid/flask
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0001-6499-4540
+      name: ORCID
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.com/scholar?q=author:%22Alexandre+Borrel%22
+      name: Google Scholar
+    - icon: fontawesome/brands/github
+      link: https://github.com/ABorrel
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/alexandre-borrel-0651a736/
+      name: LinkedIn
+    - icon: fontawesome/brands/researchgate
+      link: https://www.researchgate.net/profile/Alexandre-Borrel/
+      name: ResearchGate
+    - icon: fontawesome/solid/envelope
+      link: mailto:a.borrel@gmail.com
+      name: Email
+
+extra_css:
+  - stylesheets/extra.css
+
+exclude_docs: |
+  assets/*.docx
+  assets/.gitkeep
+  assets/list_publication.docx
+  assets/resume_Aug2026.docx
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: false
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Professional experiences: experience.md
+  - Education: education.md
+  - Selected projects: projects.md
+  - Recognitions: recognitions.md
+  - Publications: publications.md
+  - Teaching & Supervision: teaching.md
+  - Communications: communications.md
+  - Community involvements: community.md

@@ -1,0 +1,201 @@
+/* Shared academic CV layout for every page. */
+
+.md-main__inner {
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  display: none;
+}
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset {
+  line-height: 1.65;
+  font-size: 0.82rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1 {
+  font-size: 1.65em;
+  margin: 0 0 0.9rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.12em;
+  margin: 1.55em 0 0.45em;
+  padding-bottom: 0.15em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h3 {
+  font-size: 1em;
+  margin: 1.2em 0 0.35em;
+  border-bottom: none;
+}
+
+.md-typeset p {
+  margin: 0 0 0.7em;
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  margin: 0.2em 0 0.85em;
+}
+
+.md-typeset li {
+  margin: 0.15em 0;
+  line-height: 1.65;
+}
+
+.md-typeset li p {
+  margin: 0.15em 0;
+}
+
+.md-typeset .headerlink {
+  display: none;
+}
+
+.md-typeset .skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 1.75rem;
+  margin: 0.4rem 0 1rem;
+}
+
+.md-typeset .skill-group h3 {
+  font-size: 1.12em;
+  font-weight: 600;
+  margin: 0.7em 0 0.3em;
+  padding-bottom: 0.15em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  letter-spacing: -0.01em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .skill-group p {
+  margin: 0 0 0.45em;
+}
+
+.md-typeset .home-hero {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin: 0 0 1.5rem;
+}
+
+.md-typeset img.home-portrait {
+  width: 11.5rem;
+  max-width: 40%;
+  height: auto;
+  border-radius: 0.3rem;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.md-typeset .home-meta {
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0;
+}
+
+.md-typeset .home-meta p {
+  margin: 0.25em 0;
+}
+
+.md-typeset .entry-meta {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.92em;
+  margin: 0 0 0.35em;
+}
+
+.md-typeset .entry-meta + ul {
+  margin: 0.1em 0 0.35em;
+}
+
+.md-typeset .entry-meta + ul li {
+  margin: 0.05em 0;
+  line-height: 1.45;
+}
+
+.md-typeset .tool-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0.8rem 0 1.6rem;
+}
+
+.md-typeset a.tool-card {
+  display: flex;
+  flex-direction: column;
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background: var(--md-default-bg-color);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset a.tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset a.tool-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+  margin: 0;
+  border-radius: 0;
+}
+
+.md-typeset a.tool-card span {
+  display: block;
+  padding: 0.4rem 0.35rem 0.5rem;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 60em) {
+  .md-typeset .tool-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .home-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .md-typeset img.home-portrait {
+    max-width: 12rem;
+    width: 12rem;
+  }
+
+  .md-typeset .tool-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md-typeset .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
