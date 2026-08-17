@@ -16,7 +16,7 @@
 
 email: a.borrel\[at\]gmail.com
 
-[Download CV (PDF)](assets/resume_Aug2026.pdf)
+[Download CV (PDF)](assets/resume_Aug2026_forweb.pdf)
 
 </div>
 
